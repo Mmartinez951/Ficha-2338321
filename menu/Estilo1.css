@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background: #DFDBDB;
+}
+
+.menu a{
+    text-decoration: none;
+    background-color: #DFDBDB;
+    padding: 1%;
+    color:#000; 
+}
+
+
+.menu a:hover{
+    border-bottom: 2px solid rgba(255, 0, 0, 0.7);
+    padding-bottom: 1%;
+    
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+
+}
+.container:after{
+    content: '';
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:url(../Diseño/taller-mecanico-productividad.jpeg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(850px);
+}
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    height: auto;
+}
+.left{
+    height: 100%;
+    background: url(señor\ con\ un\ destornillador.jpg) no-repeat center;
+    background-size: cover;
+}
+.right{
+    padding: 25px 40px;
+}
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+h2:after{
+    content: '';
+    position:absolute;
+    left: 50%;
+    bottom: 0;
+    transform:translatex(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #f71010;
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+    outline: none;
+    border:2px solid rgba(6, 66, 231, 0);
+
+}
+
+
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgb(3, 66, 254);
+}
+.area{
+    min-height: 150px;
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition:  .3s;
+    color: rgb(6, 6, 6);
+}
+.btn:hover{
+    background-color: #d09898;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .menu a {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    *{
+        font-family: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu a{
+        background-color: rgb(255, 116, 144);
+        margin-bottom: 2px;
+    }
+
+    .contact-box{
+        grid-template-columns: none;
+        height: auto;
+
+    }
+
+    .left{
+        display: none;
+    }
+
+}

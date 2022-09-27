@@ -1,0 +1,17 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    min-width: 100vh;
+    flex-wrap: wrap;
+   
+}
+footer{
+    background-color: rgb(137, 135, 135);
+    color: aliceblue;
+    position: absolute;
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+}

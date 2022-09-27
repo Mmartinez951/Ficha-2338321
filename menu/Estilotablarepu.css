@@ -1,0 +1,71 @@
+body {
+    background-color: #d5d1db;
+  }
+  
+  table {
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  th {
+    background-color: rgba(5, 5, 100, 95);
+    height: 35px;
+    border-bottom: 1px solid rgb(191, 191, 193);
+    color: rgb(120, 120, 120);
+  }
+  
+  td {
+    color: rgba(100, 100, 100, 60);
+    height: 30px;
+    border: 0.5px solid rgba(240, 240, 240, 10);
+  }
+  
+  tfoot {
+    font-weight: bold;
+  }
+  
+  /*Pseudo-clases*/
+  th:hover {
+    background-color: rgb(226, 219, 219);
+  }
+  
+  tr:hover {
+    background-color: rgb(226, 219, 219);
+  }
+  
+  /* Estililos de clases*/
+  .PrecioTotal:hover,
+  .CantidadTotal:hover {
+    color: rgb(230, 50, 50);
+  }
+  
+  .Cabecera {
+    background-color: rgba(181, 181, 182, 0.99);
+    border-radius: 4px;
+    height: 30px;
+    padding: 2em;
+    margin: 0 25%;
+    text-align: center;
+    color: white;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 14pt;
+  }
+  .btn{
+    background-color: #88a7be;
+    border: 0;
+
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin: 3px;
+    text-decoration: none;
+    color: #000;
+  }
